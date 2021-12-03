@@ -9,4 +9,14 @@ const getLinesFromText = (data) => {
     return lines;
 } 
 
-export { getDataFromFile, getLinesFromText }
+const convertBinaryStringToNumber = (txt) => {
+    let number = 0;
+    txt.split('').forEach(c => {
+        number = number << 1;
+        number = number | +c;
+    });
+
+    return +number;
+}
+
+export { getDataFromFile, getLinesFromText, convertBinaryStringToNumber }
