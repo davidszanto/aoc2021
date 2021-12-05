@@ -8,6 +8,8 @@ Array.prototype.take = function (count) {
     return this.filter((_, i) => i < count);
 };
 
+// DATA METHODS
+
 const getDataFromFile = (path) => {
     return readFileSync(path, 'utf-8');
 }
@@ -46,6 +48,7 @@ const getLinesBatchedAsNumMat = (data, batchSize, offset) => {
     return matrices;
 }
 
+// CONVERSIONS
 const convertBinaryStringToNumber = (txt) => {
     let number = 0;
     txt.split('').forEach(c => {
