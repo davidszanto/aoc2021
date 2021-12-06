@@ -12,5 +12,8 @@
   "license": "ISC",
   "devDependencies": {
     "jest": "^27.4.2"
+  },
+  "dependencies": {
+    "bigarray": "^0.0.1"
   }
 }

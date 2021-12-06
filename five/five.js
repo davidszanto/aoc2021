@@ -74,8 +74,6 @@ const second = (data) => {
     return counter;
 }
 
-
-
 const convertLineToCoordinates = (lines) => {
     return lines
         .map(line => {
