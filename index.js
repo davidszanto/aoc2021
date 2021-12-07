@@ -5,6 +5,7 @@ import { threeFirst, threeSecond } from "./three/three.js";
 import { fourFirst, fourSecond } from "./four/four.js";
 import { fiveFirst, fiveSecond } from "./five/five.js";
 import { sixFirst, sixSecond } from "./six/six.js";
+import { sevenFirst, sevenSecond } from "./seven/seven.js";
 
 
 const args = process.argv.slice(2);
@@ -76,6 +77,18 @@ switch(+args) {
         console.log(resultFirst);
 
         const resultSecond = sixSecond(data);
+        console.log(resultSecond);
+
+        break;
+    }
+    case 7: {
+        const path = "./seven/input.txt";
+        const data = getDataFromFile(path);
+        
+        const resultFirst = sevenFirst(data);
+        console.log(resultFirst);
+
+        const resultSecond = sevenSecond(data);
         console.log(resultSecond);
 
         break;
