@@ -59,4 +59,13 @@ const convertBinaryStringToNumber = (txt) => {
     return +number;
 }
 
-export { getDataFromFile, getLinesFromText, convertBinaryStringToNumber, getLinesBatchedAsNumMat }
+const convertToMatrix = (lines) => {
+    const matrix = [];
+    lines.map(line => {
+        matrix.push(line.split('').map(c => +c));
+    })
+
+    return matrix;
+}
+
+export { getDataFromFile, getLinesFromText, convertBinaryStringToNumber, getLinesBatchedAsNumMat, convertToMatrix }
