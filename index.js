@@ -10,6 +10,7 @@ import { eightFirst, eightSecond } from "./eight/eight.js";
 import { nineFirst, nineSecond } from "./nine/nine.js";
 import { tenFirst, tenSecond } from "./ten/ten.js";
 import { elevenFirst, elevenSecond } from "./eleven/eleven.js";
+import { twelveFirst, twelveSecond } from "./twelve/twelve.js";
 
 
 const args = process.argv.slice(2);
@@ -141,6 +142,18 @@ switch(+args) {
         console.log(resultFirst);
 
         const resultSecond = elevenSecond(data);
+        console.log(resultSecond);
+
+        break;
+    }
+    case 12: {
+        const path = "./twelve/input.txt";
+        const data = getDataFromFile(path);
+        
+        const resultFirst = twelveFirst(data);
+        console.log(resultFirst);
+
+        const resultSecond = twelveSecond(data);
         console.log(resultSecond);
 
         break;
